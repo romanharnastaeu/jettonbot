@@ -1,0 +1,285 @@
+# =============================================================================
+# CRITICAL SECURITY - Never commit these files
+# =============================================================================
+
+# Environment variables - CRITICAL: Never commit API keys
+.env
+.env.*
+!.env.example
+
+# API Keys and secrets in any format
+*key*
+*secret*
+*token*
+*password*
+keys.*
+secrets.*
+*_keys.*
+*_secrets.*
+*_tokens.*
+config_local.*
+local_config.*
+
+# Certificates and private keys
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+
+# =============================================================================
+# USER DATA AND PRIVACY - Never commit user information
+# =============================================================================
+
+# All data directories - protect user privacy
+data/
+!data/.gitkeep
+!data/README.md
+
+# All log files - may contain user data or sensitive info
+logs/
+*.log
+!logs/.gitkeep
+!logs/README.md
+
+# Backup files that might contain sensitive data
+*.backup
+*.bak
+backup/
+backups/
+*_backup.*
+*_bak.*
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+database/
+db/
+
+# =============================================================================
+# PYTHON - Standard Python exclusions
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.env/
+.venv/
+pyvenv.cfg
+
+# =============================================================================
+# DEVELOPMENT TOOLS - IDE and editor files
+# =============================================================================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# OPERATING SYSTEM - OS-specific files
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# TEMPORARY AND CACHE FILES
+# =============================================================================
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+.tmp/
+.temp/
+
+# Cache directories
+.cache/
+cache/
+__pycache__/
+
+# Node.js (if any JS tools are used)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =============================================================================
+# PROJECT SPECIFIC - Files that shouldn't be shared
+# =============================================================================
+
+# Local configuration files
+config_local.py
+local_settings.py
+settings_local.py
+
+# Development databases
+dev.db
+development.db
+test.db
+
+# User-specific run configurations
+run_local.*
+start_local.*
+
+# Personal notes and todos
+TODO.md
+NOTES.md
+notes.txt
+todo.txt
+personal/
+
+# Test output
+test_output/
+test_results/
+
+# Documentation builds
+docs/_build/
+site/
+
+# =============================================================================
+# DOCKER AND DEPLOYMENT - Local deployment files
+# =============================================================================
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Kubernetes
+*.local.yaml
+*.local.yml
+
+# =============================================================================
+# WHAT TO INCLUDE (commented for clarity)
+# =============================================================================
+
+# ✅ Source code (src/)
+# ✅ Requirements (requirements.txt)
+# ✅ Documentation (README.md, docs/)
+# ✅ Configuration examples (.env.example)
+# ✅ Project structure files (run.py, setup files)
+# ✅ Tests (tests/)
+# ✅ License and contributing guidelines
+# ✅ .gitkeep files for empty directories 
