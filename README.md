@@ -290,9 +290,6 @@ class TonApiClient:
 - Check database connection pooling
 - Review async/await usage
 
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 🔗 Resources
 
